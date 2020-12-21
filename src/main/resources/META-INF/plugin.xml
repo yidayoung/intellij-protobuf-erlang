@@ -4,12 +4,13 @@
     <vendor email="418621207@qq.com" url="https://github.com/yidayoung/intellij-protobuf-erlang"/>
 
     <description><![CDATA[
-    Support Erlang record fields resolve to proto file
-    - make sure your proto file into path [like this](https://github.com/yidayoung/intellij-protobuf-editor#path-settings)
-    - make sure your proto trans to record not maps
+    <p>Support Erlang record fields resolve to proto file</p>
+    <p>Need plugin Erlang and Protocol Buffer Editor</p>
 
-    then plugin will support proto record resolve to proto not generated record define
-    also field support doc if there has document in proto file
+    <ul><li>make sure your proto file into path <a href="https://github.com/yidayoung/intellij-protobuf-editor#path-settings">like this</a></li><li>make sure your proto trans to record not maps</li></ul>
+    <p>then plugin will support proto record resolve to proto not generated record define</p>
+    <p>also field support doc if there has document in proto file</p>
+    <p>create issue here <a href="https://github.com/yidayoung/intellij-protobuf-erlang">here</a></p>
     ]]></description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
