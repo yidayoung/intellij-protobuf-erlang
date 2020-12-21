@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>org.intellij.intellij-protobuf-erlang</id>
+    <name>Protobuf Erlang</name>
+    <vendor email="418621207@qq.com" url="https://github.com/yidayoung/intellij-protobuf-erlang"/>
+
+    <description><![CDATA[
+    Support Erlang record fields resolve to proto file
+    - make sure your proto file into path [like this](https://github.com/yidayoung/intellij-protobuf-editor#path-settings)
+    - make sure your proto trans to record not maps
+
+    then plugin will support proto record resolve to proto not generated record define
+    also field support doc if there has document in proto file
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.erlang</depends>
+    <depends>idea.plugin.protoeditor</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <gotoDeclarationHandler
+                implementation="idea.plugin.proto.erlang.PbErlangGotoDeclarationHandler" order="first"/>
+        <lang.documentationProvider language="Erlang" implementationClass="idea.plugin.proto.erlang.PbErlangDocumentProvider" order="first" />
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
